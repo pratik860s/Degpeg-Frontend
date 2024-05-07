@@ -1,0 +1,86 @@
+/* LoginPage.css */
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container holding the form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+  background-color: #E91E63; /* Magenta background similar to the logo */
+}
+
+/* Form styling */
+form {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.buttons {
+  width: 100%;
+  padding: 10px;
+  background-color: #E91E63; /* Magenta button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  background-color: #C2185B; /* Darker magenta for hover effect */
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Link styling */
+.link {
+  color: black; /* Magenta text for links */
+  text-decoration: dotted;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 10px;
+  }
+
+  form {
+    padding: 15px;
+  }
+}

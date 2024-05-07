@@ -1,0 +1,95 @@
+/* ExpertSignup.css */
+
+/* Base styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Light grey background */
+  }
+  
+  /* Container for the form */
+  .expertSignup {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #E91E63; /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form headings */
+  h1 {
+    color: #000000;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+  }
+  
+  /* Form inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* File input labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Buttons */
+  .buttons {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(35, 167, 255); /* Magenta button */
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+
+  .buttons:hover {
+    background-color: rgb(139, 203, 246); /* Darker magenta for hover effect */
+  }
+
+  .showButton{
+    width: 25%;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(35, 167, 255); /* Magenta button */
+    color: white;
+    cursor: pointer;
+  }
+  .showButton:hover{
+    background-color: rgb(139, 203, 246);
+  }
+  
+  /* Password mismatch message */
+  p {
+    color: red;
+    text-align: center;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .expertSignup {
+      margin: 20px;
+      padding: 15px;
+    }
+  }
+  
