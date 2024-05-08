@@ -3,22 +3,26 @@
 /* Base styles */
 * {
     box-sizing: border-box;
-  }
-  
-  body, html {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #fff; /* Light grey background */
-  }
-  
+    padding: 0;
+  }  
   /* Container for the form */
-  .expertSignup {
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #E91E63; /* White background for the form */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  .expertSignup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to top left, #e8e8e8, #ff5fd7);
+  }
+
+  .expertSignup-card{
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+
   }
   
   /* Form headings */
@@ -51,14 +55,12 @@
   
   /* Buttons */
   .buttons {
-    width: 100%;
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color: rgb(35, 167, 255); /* Magenta button */
+    background-color: rgb(0, 153, 255); /* Magenta button */
     color: white;
     cursor: pointer;
-    margin-top: 10px;
   }
   
 
@@ -67,13 +69,13 @@
   }
 
   .showButton{
-    width: 25%;
     padding: 5px;
     border: none;
     border-radius: 4px;
-    background-color: rgb(35, 167, 255); /* Magenta button */
+    background-color: rgb(3, 154, 255); /* Magenta button */
     color: white;
     cursor: pointer;
+    margin-bottom: 10px;
   }
   .showButton:hover{
     background-color: rgb(139, 203, 246);
@@ -81,7 +83,7 @@
   
   /* Password mismatch message */
   p {
-    color: red;
+    color: black;
     text-align: center;
   }
   

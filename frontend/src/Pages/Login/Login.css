@@ -1,86 +1,97 @@
-/* LoginPage.css */
-
-/* Base styles */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* Container holding the form */
 .login-container {
   display: flex;
+  flex-direction: row; /* Display children side by side */
   justify-content: center;
   align-items: center;
-  height: 100%;
-  padding: 20px;
-  background-color: #E91E63; /* Magenta background similar to the logo */
+  height: 100vh;
+  background: linear-gradient(to top left, #e8e8e8, #ef03b4);
 }
 
-/* Form styling */
-form {
-  max-width: 400px;
-  width: 100%;
-  padding: 20px;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Styling for the login poster */
+.login-poster {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-label {
-  display: block;
-  margin-top: 10px;
-}
-
-input[type=email], input[type=password] {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
+/* Styling for the login image */
+.login-image-div {
   margin-bottom: 20px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
 }
 
-.buttons {
+.login-image {
+  width: 301px;
+  height: auto;
+  border-radius: 10px 0 0 10px;
+  filter: brightness(50%);
+}
+
+.h1-login {
+  font-size: 24px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 40%;
+  color: white;
+}
+.paragraph {
+  font-size: 14px;
+  color: #ffffff;
+  position: absolute;
+  width: 15%;
+  top: 47%;
+}
+
+/* Styling for the login card */
+.login-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0 10px 10px 0;
+  padding: 60px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Styling for the h1 inside the login card */
+.login-card h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the input fields inside the login card */
+.login-card input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the login button */
+.login-card button {
   width: 100%;
   padding: 10px;
-  background-color: #E91E63; /* Magenta button */
-  color: white;
+  background-color: #f600a8;
+  color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.buttons:hover {
-  background-color: #C2185B; /* Darker magenta for hover effect */
+/* Styling for the links inside the login card */
+.login-card .link {
+  color: blue;
+  text-decoration: none;
+  margin-left: 5px;
 }
 
-p {
-  text-align: center;
-  margin-top: 20px;
-}
-
-/* Link styling */
-.link {
-  color: black; /* Magenta text for links */
-  text-decoration: dotted;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .login-container {
-    padding: 10px;
-  }
-
-  form {
-    padding: 15px;
-  }
+/* Styling for the paragraph below the login button */
+.login-card p {
+  margin-top: 10px;
 }
